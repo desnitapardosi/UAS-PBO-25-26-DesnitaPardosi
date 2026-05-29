@@ -3,11 +3,13 @@ package pbo.f01.model;
 import javax.persistence.*;
 
 
+
 @Entity
 @Table(name = "vehicles")
 public class Vehicle implements Comparable<Vehicle> {
 
 
+    
     @Id
     @Column(name = "plate_number", nullable = false, unique = true)
     private String plateNumber;
