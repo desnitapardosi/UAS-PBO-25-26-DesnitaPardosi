@@ -43,7 +43,7 @@ public class ParkingArea implements Comparable<ParkingArea> {
     public List<Vehicle> getVehicles() { return vehicles; }
     public void setVehicles(List<Vehicle> vehicles) { this.vehicles = vehicles; }
 
-    
+
     public boolean isEligibleToPark(Vehicle v) {
         boolean matchType = this.allowedType.equalsIgnoreCase(v.getType());
         boolean hasSpace = this.vehicles.size() < this.capacity;
